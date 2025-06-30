@@ -49,6 +49,6 @@ function searchMember() {
     const input = document.getElementById('searchInput').value.trim();
     if (input) {
         const encoded = encodeURIComponent(input);
-        window.location.href = `member.html?username=${encoded}`;
+        window.location.href = `member?username=${encoded}`;
     }
 }
