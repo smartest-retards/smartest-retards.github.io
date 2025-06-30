@@ -1,0 +1,118 @@
+:root {
+    --primary: #7e5bef;
+    --secondary: #5b8ef9;
+    --accent: #ff6b9c;
+    --neutral: #4a5568;
+    --light: #f8f9fc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0e7ff 0%, #d1e0fd 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 0 0 50% 50% / 0 0 10% 10%;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.75rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0.75rem auto 0;
+}
+
+.search-bar {
+    background: white;
+    max-width: 500px;
+    margin: -1.5rem auto 2rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(123, 97, 255, 0.2);
+    border: 1px solid #e2e8f0;
+    height: 5vh;
+    /* margin: 6vh 0 4vh 0; */
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2d3748;
+}
+
+.search-bar button {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.content {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.125rem;
+    color: var(--neutral);
+    line-height: 1.75;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.invite-btn {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(123, 97, 255, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.invite-btn:hover {
+    transform: scale(1.05);
+}
+
+.invite-btn i {
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smartest Retards - Server Overview</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Smartest Retards</h1>
+        <p>Where genius meets chaos. A private community of sharp minds, dark humor, and digital brotherhood.</p>
+    </header>
+
+    <div class="search-bar relative" style="z-index:10;">
+        <input type="text" placeholder="Search members by Discord username..." id="searchInput" oninput="handleInput()"
+            autocomplete="off" />
+        <button onclick="searchMember()">Search</button>
+
+        <div id="suggestions"
+            class="absolute top-full mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-md max-h-52 overflow-y-auto hidden z-20">
+        </div>
+    </div>
+
+    <section class="content">
+        <h2>About the Server</h2>
+        <p>
+            Smartest Retards is not your average Discord server. It's a haven for the analytically unhinged, the darkly
+            comedic, and the relentlessly curious. Whether you're into coding, psychology, gaming, or just absurd
+            late-night rants—this is your place. Rules? Few. Expectations? High. Intelligence? Debatable.
+        </p>
+        <a class="invite-btn" href="/discord" target="_blank">
+            <i class="fab fa-discord"></i> Join the Server
+        </a>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>
